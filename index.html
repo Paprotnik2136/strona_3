@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="tile.js"></script>
+    <script src="grid.js"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js" integrity="sha512-WJXVjqeINVpi5XXJ2jn0BSCfp0y80IKrYh731gLRnkAS9TKc5KNt/OfLtu+fCueqdWniouJ1ubM+VI/hbo7POQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <script src="libs/leafleat-plugins/tileLayerCanvas.js"></script>
+    <script src="libs/html2canvas.min.js"></script>
+    <title>Lab5</title>
+</head>
+<body>
+    <div class="page-container">
+
+        <div class="map-wrapper" id="map-wrapper"></div>
+        <div class="canvas-wrapper" id="canvas-wrapper"></div>
+        <div class="page-nav">
+    
+                <div class="nav-element">
+                    <label for="lat">Latitude</label>
+                    <input type="text" id="lat" value="35.6725676283387">
+                </div>
+                <div class="nav-element" >
+                    <label for="long">Longitude</label>
+                    <input type="text" id="long" value="139.7890090942383">
+                </div>
+                <div class="nav-element">
+                    <div class="button" id="latlong-btn">Set</div>
+                </div>
+                <div class="nav-element">
+                    <div class="button" id="use-current-loc-btn">Use my location</div>
+                </div>
+
+                <div class="nav-element">
+                    <div class="button" id="create-tiles-btn">Transform to Image</div>
+                </div>
+                <div class="nav-element">
+                    <div class="button disabled" id="shuffle-tiles-btn">Shuffle</div>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>
